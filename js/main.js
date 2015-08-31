@@ -52,7 +52,7 @@ $(document).ready(function() {
 		}
 
 		// There is storage in the first tab
-		if(Storage["FirstTab"].length > 0)
+		if(Storage["FirstTab"].length != undefined)
 		{
 			SitesList = $("#FirstList fieldset");
 			for (var i = 0; i < Storage["FirstTab"].length; i++) 
@@ -65,7 +65,7 @@ $(document).ready(function() {
 		}
 
 		// There is storage in the third tab
-		if(Storage["ThirdTab"].length > 0)
+		if(Storage["ThirdTab"].length != undefined)
 		{
 			SitesList = $("#SecondList fieldset");
 			for (var i = 0; i < Storage["ThirdTab"].length; i++) 
