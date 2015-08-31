@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WebApp</title> 
+		<link rel="stylesheet" href="css/main.css">
+	    <link rel="stylesheet" href="fonts/style.css">
+        <style type="text/css"></style>
+    </head>
+
+    <body>
+        <header>
+          <div class="layout-wrap">
+            <a href="#">
+				<img id="logo" src="img/logo-netcraft.svg" alt="netcraft">
+			</a>
+            <form class="search-box">
+                <input type="search" name="q" placeholder="search">
+            </form>
+          </div>
+        </header>
+
+		<section class="page-body layout-wrap">
+			<div class="notifications">
+				<p> The data of UTF BI would be updated at 16:00 pm </p>
+			</div>
+			<nav>
+				<div class="nav-section" id="nav-one" style="background-image:url(img/icons/action-report-new.png)">
+					<p>Select <br> Reporting Platform</p>
+					<div class="menu">
+						<div class="menu-caption">
+							<div class="arrow"></div>
+							<p>Choose QS report</p>
+						</div>
+						<ul class="action-list">
+							<li>
+								<a href="#">Corporate</a>
+							</li>
+							<li>
+								<a href="#">Simple</a>
+							</li>
+							<li>
+								<a href="#">Business</a>
+							</li>
+						</ul>					
+					</div>
+				</div>
+
+				<div class="nav-section" id="nav-two" style="background-image:url(img/icons/action-report-top.png)">
+					<p>Select <br> Dashboard</p>
+
+					<div class="menu">
+						<div class="menu-caption">
+							<div class="arrow"></div>
+							<p>Choose dashboard</p>
+						</div>
+						<ul class="action-list">
+							<li>
+								<a href="#">Account Dashboard</a>
+							</li>
+							<li>
+								<a href="#">Daily Huddle Dashboard</a>
+							</li>
+							<li>
+								<a href="#">Tier 2 Dashboard</a>
+							</li>
+							<li>
+								<a href="#">ADM Dashboard</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-section" id="nav-three" style="background-image:url(img/icons/actions-help.png)">
+					<p>Help &amp; <br> Tutorials</p>
+					<div class="menu">
+						<div class="menu-caption">
+							<div class="arrow"></div>
+							<p>Choose guide</p>
+						</div>
+
+						<ul class="action-list">
+							<li>
+								<a href="#">Real Time</a>
+							</li>
+							<li>
+								<a href="#">Past Data</a>
+							</li>
+							<li>
+								<a href="#">Corporate Data</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		<section class="tabs">
+			<ul role="tablist">
+				<li class="icon-star-o active" id="tab-one">
+					Quick Reports
+				</li>
+				<li class="icon-external-link" id="tab-two">
+					My Folders
+				</li>
+				<li class="icon-copy" id="tab-three">
+					My Team Folders
+				</li>
+				<li class="icon-folder-open-o"id="tab-four">
+					Public Folders
+				</li>
+			</ul>
+
+			
+			<div id="quick-reports" class="InTab tab">
+                    <div class="inside-tabs">
+                        <div class="site-icons">
+                            <input type="image" class="expand" src="img/icons/expand.png" alt="Open Site">
+                            <input type="image" class="settings" src="img/icons/settings.png" alt="Edit Sites">
+                        </div>
+                        <div class="list-form">
+                            <form id="FirstList" class="input-form">
+                                <fieldset class="enter-site">
+                                    <label id="report">Report 1:</label>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Site name">
+                                    <label>URL</label>
+                                    <input type="url" placeholder="Site URL">
+                                </fieldset>
+
+                                <fieldset class="enter-site">
+                                    <label id="report">Report 2:</label>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Site name">
+                                    <label>URL</label>
+                                    <input type="url" placeholder="Site URL">
+                                </fieldset>
+
+                                <fieldset class="enter-site">
+                                    <label id="report">Report 3:</label>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Site name">
+                                    <label>URL</label>
+                                    <input type="url" placeholder="Site URL">
+                                </fieldset>
+                            </form>
+
+                            <div class="end-btns">
+                                <button type="submit" form="FirstList" value="Submit" class="save">Save</button>
+                                <button type="button" class="cancel">cancel</button>								
+                            </div>
+                        </div>
+                        <div class="tab-iframe"></div>
+                    </div>
+                </div>
+
+                <div id="my-folders" class="InTab tab">
+                    <div class="inside-tabs">
+                        <div class="site-icons">
+                            <input type="image" class="icon expand" src="img/icons/expand.png" alt="Open Site">
+                        </div>
+                        <div class="tab-iframe">
+                            <iframe src="http://www.paulirish.com/"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="my-team-folders" class="InTab tab">
+                    <div class="inside-tabs">
+                        <div class="site-icons">
+                            <input type="image" class="expand" src="img/icons/expand.png" alt="Open Site">
+                            <input type="image"class="settings" src="img/icons/settings.png" alt="Edit Sites">
+                        </div>
+                        <div class="list-form">
+                            <form id="SecondList" class="input-form">
+                                <fieldset class="enter-site">
+                                    <label id="report">Report 4:</label>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Site name">
+                                    <label>URL</label>
+                                    <input type="url" placeholder="Site URL">
+                                </fieldset>
+
+                                <fieldset class="enter-site">
+                                    <label id="report">Report 5:</label>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Site name">
+                                    <label>URL</label>
+                                    <input type="url" placeholder="Site URL">
+                                </fieldset>
+
+                                <fieldset class="enter-site">
+                                    <label id="report">Report 6:</label>
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Site name">
+                                    <label>URL</label>
+                                    <input type="url" placeholder="Site URL">
+                                </fieldset>
+                            </form>
+
+                            <div class="end-btns">
+								<button type="submit" form="SecondList" value="Submit" class="save">Save</button>
+                                <button type="button" class="cancel">cancel</button>                              
+                            </div>
+                        </div>
+                        <div class="tab-iframe"></div>
+                    </div>
+                </div>
+
+                <div id="public-folders" class="InTab tab">
+                     <div class="inside-tabs">
+                        <div class="site-icons">
+                            <input type="image" class="expand" src="img/icons/expand.png" alt="Open Site">
+                        </div>
+                         <div class="tab-iframe"> 
+                            <iframe src="http://addyosmani.com/"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+</body>
+</html>
