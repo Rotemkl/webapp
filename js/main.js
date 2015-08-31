@@ -285,10 +285,9 @@ $(document).ready(function() {
 	$("#quick-reports .expand").hide();
 	$("#my-team-folders .expand").hide();
 
+	TabSection.hide();
 
 	LoadSite();
-
-	TabSection.hide();
 
 	$(window).unload(function() {
 		UpdateStorage( CurrentTab, "LastTab" );
