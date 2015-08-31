@@ -61,7 +61,8 @@ $(document).ready(function() {
 				SiteValue[0].value = Storage["FirstTab"][i].site;
 				SiteValue[1].value = Storage["FirstTab"][i].url;
 			};
-			UpdateSitesTab(QUICK_REPORTS);
+			if( Storage["FirstTab"].length > 0 )
+				UpdateSitesTab(QUICK_REPORTS);
 		}
 
 		// There is storage in the third tab
@@ -74,7 +75,8 @@ $(document).ready(function() {
 				SiteValue[0].value = Storage["ThirdTab"][i].site;
 				SiteValue[1].value = Storage["ThirdTab"][i].url;
 			};
-			UpdateSitesTab(MY_TEAM_FOLDERS);
+			if(Storage["ThirdTab"].length > 0)
+				UpdateSitesTab(MY_TEAM_FOLDERS);
 		}
 	}
 	
